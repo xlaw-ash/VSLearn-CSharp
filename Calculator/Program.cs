@@ -77,7 +77,7 @@ namespace Calculator
                 }
                 else
                 {
-                    Console.WriteLine($"Result: {result}");
+                    Console.WriteLine($"Result: {result:F2}");
                 }
             }
             catch(Exception e)
