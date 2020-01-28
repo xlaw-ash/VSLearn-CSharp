@@ -1,8 +1,17 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200127050425_Movie.cs" />
+    <Compile Remove="Migrations\20200127050425_Movie.Designer.cs" />
+    <Compile Remove="Migrations\20200127062108_UpdateRunTime.cs" />
+    <Compile Remove="Migrations\20200127062108_UpdateRunTime.Designer.cs" />
+    <Compile Remove="Migrations\20200128153510_updatevalidationv1.cs" />
+    <Compile Remove="Migrations\20200128153510_updatevalidationv1.Designer.cs" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.0" />
